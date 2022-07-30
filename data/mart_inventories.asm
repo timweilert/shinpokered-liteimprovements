@@ -3,7 +3,7 @@
 
 ; Viridian
 ViridianCashierText::
-	TX_MART POKE_BALL, ANTIDOTE, PARLYZ_HEAL, BURN_HEAL
+	TX_MART POKE_BALL, ANTIDOTE, PARLYZ_HEAL, BURN_HEAL, EXP_ALL, TOWN_MAP
 
 ; Pewter
 PewterCashierText::
