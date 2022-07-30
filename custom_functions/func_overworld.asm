@@ -49,7 +49,7 @@ TrackRunBikeSpeed:
 	call z, IsRidingBike
 	ld a, [hJoyHeld]
 	and B_BUTTON	;holding B to speed up? (non-zero value = TRUE)
-	;call nz, IsRunning	;joenote - uncomment this line to make holding B do double-speeed while walking/surfing/biking
+	call nz, IsRunning	;joenote - uncomment this line to make holding B do double-speeed while walking/surfing/biking
 	ld a, [wUnusedD119]
 	cp 2	;is biking without speedup being done?
 	jr z, .skip	;if not make the states a value from 1 to 4 (excluding biking without speedup, which needs to be 2)
